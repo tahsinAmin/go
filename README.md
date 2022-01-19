@@ -12,3 +12,31 @@
 - float 64 gives a better precision.
 - A project block will have only one main method.
 - A library gets removed autromatrically if its of no use anymore. similarly, a library is import if its being used
+- ```
+  Println := fmt.Println
+  Println("Hello")
+  ```
+
+# Problems and it solutions
+
+- [x] Go: "stat hello.go: no such file or directory". Solution is to see if both the files are in the same directory.
+- [ ] .Sprintf("%-25v\n", value). But what about .Sprintf("%0.2f\n", value)?
+- [x] Getting into that bin
+
+```
+nano ~/.profile
+```
+
+```
+export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/home/w3e65/go/bin
+
+export GOPATH="/home/w3e65/go/"
+export GOBIN="/home/w3e65/go/bin"
+```
+
+- How to use EOF?
+
+```
+
+```

@@ -1,14 +1,4 @@
-package main
-
-import (
-	"bufio"
-	"fmt"
-	"os"
-)
-
-func main() {
-	var str string
-	keys := map[string]string{
+keys = {
 		"1":  "`",
 		"2":  "1",
 		"3":  "2",
@@ -53,15 +43,14 @@ func main() {
 		".":  ",",
 		"/":  ".",
 		" ":  " ",
-	}
-	scanner := bufio.NewScanner(os.Stdin)
-	for scanner.Scan() {
-		str := scanner.Text()
-		for i := 0; i < len(str); i++ {
-			fmt.Print(keys[str[i:i+1]])
-		}
-		fmt.Println("")
-	}
 }
 
-// https://www.beecrowd.com.br/judge/en/problems/view/1196
+while True:
+    try:
+        str = input()
+        for i in str:
+            print(keys[i], end='')
+        
+        print("")
+    except(EOFError):
+        break
