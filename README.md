@@ -1,3 +1,5 @@
+export GO111MODULE=on
+
 # tutorial following - https://www.youtube.com/watch?v=ypV7r1ODZCA&list=PL4cUxeGkcC9gC88BEo9czgyS72A3doDeM&index=10
 
 # Installation of Go
