@@ -19,6 +19,8 @@ export GO111MODULE=on
   Println("Hello")
   ```
 
+- The fields in the struct has to be capitalize
+
 # Problems and it solutions
 
 - [x] Go: "stat hello.go: no such file or directory". Solution is to see if both the files are in the same directory.
