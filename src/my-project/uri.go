@@ -1,51 +1,58 @@
 package main
 
 import (
-	"bufio"
 	"fmt"
-	"os"
-	"strings"
 )
 
 func main() {
-	reader := bufio.NewReader(os.Stdin)
-	Println := fmt.Println
+	// reader := bufio.NewReader(os.Stdin)
+	// Println := fmt.Println
 	var (
-		lines        []string
-		no_of_people int
-		questions    int
-		solvedAll    bool
+	// lines             []string
+	// no_of_people      int
+	// questions         int
+	// no_one_solved_all bool
 	)
 
-	fmt.Scan(&no_of_people, &questions)
+	result := make([][]string, 4)
+	fmt.Printf("%q, %q, %q, %q \n", result[0][0], result[0][1], result[0][2], result[0][3])
 
-	problems_solved := make([]int, questions)
-	cnt_solved := 0
+	fmt.Scan(&result[0][0], &result[0][1])
 
-	Println(problems_solved[0])
+	// // problems_solved := make([]int, questions)
+	// all := make([][]string, questions)
+	// cnt_solved := 0
+	// score := 0
+	// // Println(problems_solved[0])
 
-	for x := 0; x < no_of_people; x++ {
-		text, _ := reader.ReadString('\n')
-		text = strings.Replace(text, "\n", "", -1)
-		solvedAll = strings.Contains(text, "0")
-		lines = strings.Split(text, " ")
-		for x := 0; x < len(lines); x++ {
-			if lines[cnt_solved] == "1" {
-				problems_solved[cnt_solved] = 1
-				cnt_solved += 1
-			} else {
-				break
-			}
-		}
-	}
+	// for x := 0; x < no_of_people; x++ {
+	// 	fmt.Scan(&all[x][0], &all[x][1], &all[x][2])
 
-	score := 0
-	if solvedAll {
-		score += 1
-	}
-	Println(score, lines)
-	Println(problems_solved)
+	// 	// text, _ := reader.ReadString('\n')
+	// 	// text = strings.Replace(text, "\n", "", -1)
+	// 	// no_one_solved_all = strings.Contains(text, "0")
+	// 	// lines = strings.Split(text, " ")
+	// 	// all = append(all, lines)
+	// 	// for x := 0; x < len(lines); x++ {
+	// 	// 	if lines[x] == "1" {
+	// 	// 		problems_solved[x] = 1
+	// 	// 		cnt_solved += 1
+	// 	// 	}
+	// 	// 	if cnt_solved == questions {
+	// 	// 		break
+	// 	// 	}
+	// 	// }
+	// }
 
+	// if no_one_solved_all {
+	// 	score += 1
+	// }
+	// if cnt_solved == questions {
+	// 	score += 1
+	// }
+
+	// Println(score)
+	// Println(all)
 }
 
 // https://www.beecrowd.com.br/judge/en/problems/view/1514
